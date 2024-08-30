@@ -7,6 +7,7 @@
     <link rel="icon" href="Images/Icon.ico">
     <link rel="stylesheet" href="CSS/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="JS/index.js"></script>
 </head>
 <body>
     <header>
@@ -20,7 +21,7 @@
     <!--<h2 class="Test">Where the game and odds meet</h2> -->
     <div class="subtitle" id="secondSubtitle">Comprehensive Tools for Every Trader.</div>
 
-    <div class="container">
+    <div class="container" id="mainContainer">
         <div class="row">
             <div class="column">
                 <img src="Images/Data.jpg" alt="Live Market Data" class="ImgTest">
@@ -48,11 +49,37 @@
             </div>
         </div>
     </div>
+
+    <div class="login-container" id="formContainer" style="display:none;">
+        <form id="mainForm">
+            <img src="Images/OddsStream.png" class="formImage">
+            <input type="text" required autocomplete="off" maxlength="12" minlength="3" placeholder="Username or Email...">
+            <input type="password" required autocomplete="off" maxlength="30" minlength="6" placeholder="Password...">
+            <label for="forgotPassword" id="passwordReset">Forgot password ?</label>
+            <button type="submit">Log In</button>
+            <div class="checkbox-container">
+                <input type="checkbox" id="checkBox" name="checkBox">
+                <label for="checkBox">Remember me</label>
+            </div>
+            <span class="close" id="closeLogin">&times;</span>
+        </form>
+    </div>
+
+    <div class="register-container" id="registerContainer" style="display:none;">
+        <form id="mainForm">
+            <img src="Images/OddsStream.png" class="formImage">
+            <input type="text" required autocomplete="off" maxlength="12" minlength="3" placeholder="Username...">
+            <input type="text" required autocomplete="off" maxlength="30" minlength="6" placeholder="Email...">
+            <input type="password" required autocomplete="off" maxlength="30" minlength="6" placeholder="Password...">
+            <button type="submit">Register</button>
+            <span class="close" id="closeRegister">&times;</span>
+        </form>
+    </div>
+
 <!--
 https://preview.themeforest.net/item/gameone-sports-betting-platform-html-template/full_screen_preview/34240587    
 https://softivuspro.com/oddsx/oddsx/index.html
 https://themeforest.net/item/gameone-sports-betting-platform-html-template/34240587
 -->
-    <script type="module" src="JS/index.js"></script>
 </body>
 </html>
